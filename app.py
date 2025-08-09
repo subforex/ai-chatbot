@@ -4,7 +4,7 @@ from transformers import pipeline
 app = Flask(__name__)
 
 # You can change the model here (smaller models are faster and free to use)
-chatbot = pipeline("text-generation", model="microsoft/DialoGPT-small")
+chatbot = pipeline("text-generation", model="sshleifer/tiny-gpt2")
 
 # Optional: customise your bot's style or domain
 BOT_PERSONALITY = "You are a friendly and helpful assistant."
